@@ -1,7 +1,9 @@
+
 <?php
 
+
 $fejléc = array(
-  'cim' => 'Kecskeméti fürdő',
+  'cim' => 'Hírös-Sport Nonprofit Kft.'
 );
 
 $oldalak = array(
@@ -15,8 +17,11 @@ $oldalak = array(
     array('fájl' => 'kapcsolat', 'szoveg' => 'Kapcsolat'),
   'galeria' =>
     array('fájl' => 'galeria', 'szoveg' => 'Galéria'),
+	'video' =>
+    array('fájl' => 'video', 'szoveg' => 'Videó'),
 );
 
 $hiba_oldal = array ('fájl' => '404', 'szoveg' => 'A keresett oldal nem található');
+
 
 ?>
