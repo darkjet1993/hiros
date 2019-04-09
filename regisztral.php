@@ -35,6 +35,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 mysqli_close($conn);
+include("index.php");
 ?>
 </body>
 </html>

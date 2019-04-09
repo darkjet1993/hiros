@@ -285,11 +285,13 @@ window.addEventListener("click", function(event) {
 </form>
       </div>
     </div>
+	
   </div>
+ 
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+ <footer class=" container-fluid text-center" >
+  <p style="color:white">Készítette: Fábián Zsolt Neptun: MXCBSI GAMF MIK 2018/2019/2</p> 
 </footer>
  
 </body>
