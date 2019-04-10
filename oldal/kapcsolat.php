@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<h1>Bemutatkozás</h1>
+<h1>Kapcsolat</h1>
 
 <h3>HÍRÖS SPORT NONPROFIT KFT.</h3>
 

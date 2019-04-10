@@ -1,23 +1,21 @@
 <?php
 	
 	
-	//Check if the file is well uploaded
-	if($_FILES['file']['error'] > 0) { echo 'Error during uploading, try again'; }
-	//We won't use $_FILES['file']['type'] to check the file extension for security purpose
+	//ellenőrzi a fájl feltöltését
+	if($_FILES['file']['error'] > 0) { echo 'Hiba a feltöltés közben..próbáld újra!'; }
 	
-	//Set up valid image extensions
+	
+	//engedélyezett kiterjesztések
 	$extsAllowed = array( 'jpg', 'jpeg', 'png', 'gif' );
 	
-	//Extract extention from uploaded file
-		//substr return ".jpg"
-		//Strrchr return "jpg"
+	
 		
 	$extUpload = strtolower( substr( strrchr($_FILES['file']['name'], '.') ,1) ) ;
-	//Check if the uploaded file extension is allowed
+	//kiterjesztés ellenőrzése
 	
 	if (in_array($extUpload, $extsAllowed) ) { 
 	
-	//Upload the file on the server
+	//feltöltés
 	
 	$name = "image/{$_FILES['file']['name']}";
 	$result = move_uploaded_file($_FILES['file']['tmp_name'], $name);
@@ -43,7 +41,7 @@ $kapcsolat = new mysqli($server, $user,$password,$db);
 		
 	}
 		
-	} else { echo 'File is not valid. Please try again'; }
+	} else { echo 'Fájl nem érvényes'; }
 	
 $sql = "INSERT INTO galeria (cim,leiras , eleres)
 VALUES ('$cim','$leiras', '$eleres')";

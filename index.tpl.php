@@ -98,11 +98,11 @@ $kapcsolat = new mysqli($server, $user,$password,$db);
 	 if(isset($_POST['submit']))
 	 {
 		 
-		 echo"<a href=",$c,"><li><button id=",$a," class=",$b,">Kijelentkezés</button></li></a>";
+		 echo"<a href=",$c,"><li><button id=",$a," class=",$b,">Kilép</button></li></a>";
 	 }
 		 else
 		 {
-		echo"<li><button id=",$a," class=",$b,">Bejelentkezés</button></li>";
+		echo"<li><button id=",$a," class=",$b,">Belépés</button></li>";
 		echo"<li><button id=",$d," class=",$b,">Regisztráció</button></li>";
 		 }
 	 
@@ -242,18 +242,16 @@ window.addEventListener("click", function(event) {
     </div>
     <div class="col-md-2 sidenav">
       <div class="well">
-        <script>
-  (function() {
-    var cx = '001819862123426215733:0rfz8lny074';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
+      <!--Google kereso indul-->
+<form action="http://www.google.co.hu/search" method="get">
+
+<input type="text"  name="q" value=""  />
+<input type="submit" name="btnG" value="Google keresés" />
+<input type="hidden" name="domains" value="www.webbead.nhely.hu" />
+<input type="radio" name="sitesearch" value="" /> www 
+<input type="radio" checked="checked" name="sitesearch" 
+value="http://webbead.nhely.hu" /> webbead.nhely.hu
+</form><!--Google kereso vege-->
       </div>
       <div class="well">
 	  
